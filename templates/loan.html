@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Register
+{% endblock %}
+
+{% block main %}
+    <form action="{{ url_for('loan') }}" method="post">
+        <fieldset>
+            <div class="form-group">
+                <input class="form-control" name="amount" placeholder="Amount" type="text"/>
+            </div>
+            <div class="form-group">
+                <button class="btn btn-default" type="submit">Ask For Loan</button>
+            </div>
+        </fieldset>
+    </form>
+{% endblock %}
